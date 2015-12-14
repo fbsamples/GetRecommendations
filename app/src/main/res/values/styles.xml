@@ -1,0 +1,129 @@
+<!--
+    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+
+    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+    copy, modify, and distribute this software in source code or binary form for use
+    in connection with the web services and APIs provided by Facebook.
+
+    As with any software that integrates with the Facebook platform, your use of
+    this software is subject to the Facebook Developer Principles and Policies
+    [http://developers.facebook.com/policy/]. This copyright notice shall be
+    included in all copies or substantial portions of the software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<resources>
+
+    <style name="Widget.GetRecommendations.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:logo">@android:color/transparent</item>
+        <item name="android:titleTextStyle">@style/Widget.GetRecommendations.ActionBar.Text</item>
+        <item name="android:contentInsetStart">@dimen/getrecs_green_padding</item>
+    </style>
+
+    <style name="Widget.GetRecommendations.ActionBar.Text" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/action_bar_text_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Widget.GetRecommendations.IconMenuText" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/getrecommendations_background</item>
+        <item name="android:textSize">@dimen/app_unit_medium_font_size</item>
+    </style>
+
+    <style name="GetRecommendations">
+        <item name="android:actionBarStyle">@style/Widget.GetRecommendations.ActionBar</item>
+        <item name="android:alertDialogTheme">@style/Widget.GetRecommendations.Dialog</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:textColor">@color/body_text_color</item>
+        <item name="android:itemTextAppearance">@style/Widget.GetRecommendations.IconMenuText</item>
+        <item name="android:itemBackground">@color/options_item_background</item>
+    </style>
+
+    <style name="Widget.GetRecommendations.Dialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:borderlessButtonStyle">
+            @style/Widget.GetRecommendations.Button.Borderless
+        </item>
+        <item name="android:buttonBarStyle">@style/Widget.GetRecommendations.Dialog.ButtonBar</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Widget.GetRecommendations.Button.Borderless" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Widget.GetRecommendations.Dialog.ButtonBar" parent="@android:style/Holo.ButtonBar.AlertDialog">
+        <item name="android:background">@color/getrecommendations_highlight</item>
+    </style>
+
+    <style name="Widget.GetRecommendations.BodyTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/body_text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Widget.GetRecommendations.CardBodyTextView" parent="@style/Widget.GetRecommendations.BodyTextView">
+        <item name="android:textColor">@color/card_body_text_color</item>
+    </style>
+
+    <style name="Widget.GetRecommendations.ButtonTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/app_unit_medium_font_size</item>
+        <item name="android:textColor">@color/getrecommendations_highlight</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Widget.GetRecommendations.CardTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/app_unit_medium_font_size</item>
+        <item name="android:textColor">@color/getrecommendations_primary_dark</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Widget.GetRecommendations.HeaderTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/app_unit_large_font_size</item>
+        <item name="android:textColor">@color/header_text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Widget.GetRecommendations.ProgressBar" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/ProgressDialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+    </style>
+
+    <style name="GetRecommendationsDialog" parent="@android:style/Theme.Dialog">
+
+    </style>
+</resources>

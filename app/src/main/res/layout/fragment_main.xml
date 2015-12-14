@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+
+    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+    copy, modify, and distribute this software in source code or binary form for use
+    in connection with the web services and APIs provided by Facebook.
+
+    As with any software that integrates with the Facebook platform, your use of
+    this software is subject to the Facebook Developer Principles and Policies
+    [http://developers.facebook.com/policy/]. This copyright notice shall be
+    included in all copies or substantial portions of the software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/getrecs_purple_padding"
+    android:paddingTop="@dimen/activity_top_margin"
+    tools:context="com.facebook.getrecommendations.MainActivityFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/getrecs_green_padding"
+            android:layout_marginLeft="@dimen/getrecs_green_padding"
+            android:layout_marginRight="@dimen/getrecs_green_padding"
+            android:layout_marginStart="@dimen/getrecs_green_padding"
+            android:text="@string/subtitle"
+            android:theme="@style/Widget.GetRecommendations.BodyTextView"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/getrecs_blue_padding"
+                android:layout_marginEnd="@dimen/getrecs_green_padding"
+                android:layout_marginLeft="@dimen/getrecs_green_padding"
+                android:layout_marginRight="@dimen/getrecs_green_padding"
+                android:layout_marginStart="@dimen/getrecs_green_padding"
+                android:text="@string/recommendations"
+                android:theme="@style/Widget.GetRecommendations.HeaderTextView"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.facebook.getrecommendations.AppCardPager
+                    android:id="@+id/app_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingLeft="@dimen/getrecs_green_padding"
+                    android:paddingRight="@dimen/getrecs_green_padding"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/sponsored"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding_size"
+                android:paddingRight="@dimen/padding_size"
+                android:text="@string/interpunct"
+                />
+
+            <TextView
+                android:id="@+id/ad_choices"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/ad_choices"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

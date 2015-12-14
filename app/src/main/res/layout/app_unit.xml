@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+
+    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+    copy, modify, and distribute this software in source code or binary form for use
+    in connection with the web services and APIs provided by Facebook.
+
+    As with any software that integrates with the Facebook platform, your use of
+    this software is subject to the Facebook Developer Principles and Policies
+    [http://developers.facebook.com/policy/]. This copyright notice shall be
+    included in all copies or substantial portions of the software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <com.facebook.ads.MediaView
+        android:id="@+id/media"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/getrecs_blue_padding"
+        android:paddingLeft="@dimen/getrecs_blue_padding"
+        android:paddingRight="@dimen/getrecs_blue_padding"
+        >
+
+        <FrameLayout
+            android:layout_width="@dimen/app_unit_icon_size"
+            android:layout_height="@dimen/app_unit_icon_size"
+            android:layout_gravity="center_vertical"
+            >
+
+          <ImageView
+              android:id="@+id/icon"
+              android:layout_width="@dimen/app_unit_icon_size"
+              android:layout_height="@dimen/app_unit_icon_size"
+              />
+
+          <ImageView
+              android:layout_width="@dimen/app_unit_icon_frame_size"
+              android:layout_height="@dimen/app_unit_icon_frame_size"
+              android:layout_gravity="center"
+              android:src="@drawable/icon_corner"
+              />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/app_unit_small_padding"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/app_unit_large_font_size"
+                android:textColor="@color/getrecommendations_primary_dark"
+                android:fontFamily="sans-serif-medium"
+                android:lines="1"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/app_unit_small_font_size"
+                android:textColor="@color/getrecommendations_primary_light"
+                android:lines="1"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/context_sentence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/app_unit_small_padding"
+                android:textSize="@dimen/app_unit_small_font_size"
+                android:textColor="@color/getrecommendations_primary_light"
+                android:lines="1"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/getrecs_yellow_padding"
+        android:layout_marginLeft="@dimen/getrecs_blue_padding"
+        android:layout_marginStart="@dimen/getrecs_blue_padding"
+        android:layout_marginEnd="@dimen/getrecs_blue_padding"
+        android:layout_marginRight="@dimen/getrecs_blue_padding"
+        android:lines="3"
+        android:ellipsize="end"
+        android:theme="@style/Widget.GetRecommendations.CardTextView"
+        />
+
+    <TextView
+        android:id="@+id/cta_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/getrecs_blue_padding"
+        android:padding="@dimen/app_unit_tiny_padding"
+        android:gravity="center"
+        android:textSize="@dimen/app_unit_medium_font_size"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:lines="1"
+        android:background="@drawable/cta_bg"
+        android:fontFamily="sans-serif-medium"
+        />
+
+</merge>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+
+    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+    copy, modify, and distribute this software in source code or binary form for use
+    in connection with the web services and APIs provided by Facebook.
+
+    As with any software that integrates with the Facebook platform, your use of
+    this software is subject to the Facebook Developer Principles and Policies
+    [http://developers.facebook.com/policy/]. This copyright notice shall be
+    included in all copies or substantial portions of the software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/widget_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cover_image_height"
+        android:background="@drawable/content_bg"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:id="@+id/widget_app_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_bg"
+        android:padding="@dimen/padding_size"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:id="@+id/widget_icon"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/image_bg"
+            />
+
+        <LinearLayout
+            android:id="@+id/widget_content"
+            android:layout_width="@dimen/body_text_width"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding_size"
+            android:layout_marginLeft="@dimen/padding_size"
+            android:layout_marginRight="@dimen/padding_size"
+            android:layout_marginStart="@dimen/padding_size"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/widget_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/loading"
+                android:textColor="@color/content_text"
+                android:textSize="@dimen/title_text_size"
+                />
+
+            <TextView
+                android:id="@+id/widget_body_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/content_text"
+                android:textSize="@dimen/body_text_size"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/widget_cta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/cta_bg"
+            android:padding="@dimen/cta_inner_padding"
+            android:text="@string/install_now"
+            android:textColor="@color/body_text_color"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/content_bg"
+        android:padding="@dimen/padding_size"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/widget_error_title"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/retry_error_message"
+            />
+
+        <TextView
+            android:id="@+id/widget_error_description"
+            android:layout_width="@dimen/body_text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/body_text_color"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

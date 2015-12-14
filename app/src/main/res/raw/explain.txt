@@ -1,0 +1,5 @@
+This is an Audience Network sample app.
+
+For more info on Audience Network, see:
+
+https://developers.facebook.com/docs/audience-network

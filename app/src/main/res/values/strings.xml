@@ -1,0 +1,116 @@
+<!--
+    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+
+    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+    copy, modify, and distribute this software in source code or binary form for use
+    in connection with the web services and APIs provided by Facebook.
+
+    As with any software that integrates with the Facebook platform, your use of
+    this software is subject to the Facebook Developer Principles and Policies
+    [http://developers.facebook.com/policy/]. This copyright notice shall be
+    included in all copies or substantial portions of the software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<resources>
+    <string name="app_name"
+            description="Name of the app discovery application"
+            project="getrecommendations"
+        >Get Recommendations</string>
+
+    <string name="action_close"
+            description="Text describing the close ActionBar action."
+            project="getrecommendations"
+        >Close</string>
+
+    <string name="loading"
+            description="Indicates loading"
+            project="getrecommendations"
+        >Loading&#8230;</string>
+
+    <string name="gathering_recommendations"
+            description="In place of saying loading, indicates we are gathering personalized app recommendations"
+            project="getrecommendations"
+        >Gathering personalized recommendations for you</string>
+
+    <string name="recommendations_failed"
+            description="In place of saying loading, indicates we are gathering personalized app recommendations"
+            project="getrecommendations"
+        >Unable to display recommendations at this time.  Please check you connection or try again later</string>
+
+    <string name="install_now"
+            description="A button encouraging the user to install the application now"
+            project="getrecommendations"
+        >Install Now</string>
+
+    <string name="sponsored_subtitle"
+            description="A button encouraging the user to install the application now"
+            project="getrecommendations"
+        >Sponsored · %1$s</string>
+
+    <string name="sponsored_label"
+            description="A button encouraging the user to install the application now"
+            project="getrecommendations"
+        >Sponsored</string>
+
+    <string name="recommendations"
+            description="A heading for the recommended applications to download"
+            project="getrecommendations"
+        >New recommendations for you</string>
+
+    <string name="subtitle"
+            description="Describes the purpose of the application - to surface application recommendations"
+            project="getrecommendations"
+        >Check out recommendations based on your interests, what\'s new, and current trends.</string>
+
+    <string name="license_error"
+            description="Indicates there was an error while retreiving the license governing the application"
+            project="getrecommendations"
+        >Unable to display.  Please check your connection.</string>
+
+    <string name="about"
+            description="A link to information about the app"
+            project="getrecommendations"
+        >About</string>
+
+    <string name="sponsored"
+            description="Indicates the applications are sponsored advertisements"
+            project="getrecommendations"
+        >sponsored</string>
+
+    <string name="ad_choices"
+            description="Text that links to a page for users to modify ad targeting"
+            project="getrecommendations"
+        >ad choices</string>
+
+    <string name="close_dialog"
+            description="Close alert dialog"
+            project="getrecommendations"
+        >Close</string>
+
+    <string name="retry_error_message"
+            description="Message shown when no app recommendations can be loaded due to transient errors"
+            project="getrecommendations"
+        >Unable to display recommendations right now. Please check your connection.</string>
+
+    <string name="unsupported_error_message"
+            description="Message shown when no ad request fails, and the error is not transient"
+            project="getrecommendations"
+        >Sorry, Get Recommendations is no longer available. You can disable this app from your phone\'s applications manager.</string>
+
+    <string name="try_again"
+            description="Call to action to retry the the recommendations load."
+            project="getrecommendations"
+        >Try Again</string>
+
+    <string name="about_title"
+            description="Title for a dialog explaining about the app"
+            project="getrecommendations"
+        >About Get Recommendations</string>
+</resources>

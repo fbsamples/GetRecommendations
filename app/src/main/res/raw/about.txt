@@ -1,0 +1,5 @@
+Get Recommendations
+
+An Audience Network sample application from Facebook.
+
+https://github.com/fbsamples/GetRecommendations

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+
+    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+    copy, modify, and distribute this software in source code or binary form for use
+    in connection with the web services and APIs provided by Facebook.
+
+    As with any software that integrates with the Facebook platform, your use of
+    this software is subject to the Facebook Developer Principles and Policies
+    [http://developers.facebook.com/policy/]. This copyright notice shall be
+    included in all copies or substantial portions of the software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/getrecommendations_loading_highlight"
+                android:gravity="center"
+                />
+
+            <RelativeLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:id="@+id/error_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/error_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/getrecs_purple_padding"
+                        android:theme="@style/Widget.GetRecommendations.CardBodyTextView"
+                        />
+
+                    <TextView
+                        android:id="@+id/retry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="@dimen/getrecs_purple_padding"
+                        android:text="@string/try_again"
+                        android:theme="@style/Widget.GetRecommendations.ButtonTextView"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loading_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/getrecs_blue_padding"
+                        android:paddingRight="@dimen/getrecs_blue_padding"
+                        android:paddingTop="@dimen/getrecs_blue_padding"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="@dimen/app_unit_icon_size"
+                            android:layout_height="@dimen/app_unit_icon_size"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/getrecommendations_loading_highlight"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/app_unit_small_padding"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/getrecommendations_loading_highlight"
+                                android:gravity="center"
+                                android:padding="@dimen/app_unit_tiny_padding"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:layout_marginTop="@dimen/getrecs_yellow_padding"
+                                android:background="@color/getrecommendations_loading_highlight"
+                                android:gravity="center"
+                                android:padding="@dimen/app_unit_tiny_padding"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="25dp"
+                                android:background="@color/getrecommendations_loading_highlight"
+                                android:gravity="center"
+                                android:padding="@dimen/app_unit_tiny_padding"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginEnd="@dimen/getrecs_blue_padding"
+                        android:layout_marginLeft="@dimen/getrecs_blue_padding"
+                        android:layout_marginRight="@dimen/getrecs_blue_padding"
+                        android:layout_marginStart="@dimen/getrecs_blue_padding"
+                        android:layout_marginTop="17dp"
+                        android:background="@color/getrecommendations_loading_highlight"
+                        android:gravity="center"
+                        android:padding="@dimen/app_unit_tiny_padding"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginEnd="@dimen/getrecs_blue_padding"
+                        android:layout_marginLeft="@dimen/getrecs_blue_padding"
+                        android:layout_marginRight="@dimen/getrecs_blue_padding"
+                        android:layout_marginStart="@dimen/getrecs_blue_padding"
+                        android:layout_marginTop="@dimen/getrecs_purple_padding"
+                        android:background="@color/getrecommendations_loading_highlight"
+                        android:gravity="center"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginEnd="@dimen/getrecs_blue_padding"
+                        android:layout_marginLeft="@dimen/getrecs_blue_padding"
+                        android:layout_marginRight="@dimen/getrecs_blue_padding"
+                        android:layout_marginStart="@dimen/getrecs_blue_padding"
+                        android:layout_marginTop="@dimen/getrecs_purple_padding"
+                        android:background="@color/getrecommendations_loading_highlight"
+                        android:gravity="center"
+                        android:padding="@dimen/app_unit_tiny_padding"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="@dimen/getrecs_blue_padding"
+                        android:background="@color/getrecommendations_loading_highlight"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:padding="@dimen/app_unit_tiny_padding"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</merge>
